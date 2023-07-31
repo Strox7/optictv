@@ -17,7 +17,7 @@ Navtoglle.addEventListener('click', function () {
     }
 
 
-    if (MegaMenu.classList.contains("show-mega")) return MegaMenu.classList.toggle('show-mega')
+    // if (MegaMenu.classList.contains("show-mega")) return MegaMenu.classList.toggle('show-mega')
     // textb.classList.add("texta")
     if (links.classList.contains("show-links")) return textb.classList.add("texta")
     else textb.classList.remove("texta")
@@ -38,9 +38,11 @@ rod.addEventListener('click', function () {
         Navtoglle.style.display = 'block'
     }
     if (MegaMenu.classList.contains("show-mega")) {
+        MegaMenu.classList.toggle('show-mega')
+    }
+    if (MegaMenu.classList.contains("show-mega")) {
         textb.classList.remove("texta")
     }
-    if (MegaMenu.classList.contains("show-mega")) return MegaMenu.classList.toggle('show-mega')
 
     if (links.classList.contains("show-links")) return textb.classList.add("texta")
     else textb.classList.remove("texta")
@@ -98,6 +100,15 @@ OffMlod.addEventListener('click', function () {
     textb.classList.remove("texta")
     if (links.classList.contains("show-links")) return links.classList.toggle("show-links")
 })
+
+
+
+
+
+
+
+
+
 
 
 
