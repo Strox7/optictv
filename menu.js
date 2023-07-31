@@ -85,6 +85,8 @@ const OffMlod = document.querySelector(".offmlod")
 
 
 OffClod.addEventListener('click', function () {
+    rod.style.display = 'none'
+    Navtoglle.style.display = 'block'
     textb.classList.remove("texta")
     if (links.classList.contains("show-links")) return links.classList.toggle("show-links")
 })
@@ -92,11 +94,15 @@ OffClod.addEventListener('click', function () {
 
 
 OffSlod.addEventListener('click', function () {
+    rod.style.display = 'none'
+    Navtoglle.style.display = 'block'
     textb.classList.remove("texta")
     if (links.classList.contains("show-links")) return links.classList.toggle("show-links")
 })
 
 OffMlod.addEventListener('click', function () {
+    rod.style.display = 'none'
+    Navtoglle.style.display = 'block'
     textb.classList.remove("texta")
     if (links.classList.contains("show-links")) return links.classList.toggle("show-links")
 })
