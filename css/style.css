@@ -72,190 +72,7 @@ body  {
     }
   }
 
-/* start header  */
-/* header {
-    background-color: var(--maincolor);
-    position: relative;
-}
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-header .container h2 {
-    color: white;
-    font-size: 30px;
-    height: 76px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header .container h2 > a {
-  color: white;
-    margin-left: 13px;
-}
-
-header .container h2 > .logo {
-  width: 66px;
-    border-right: 1px solid white;
-    padding-right: 10px;
-}
-
-@media (max-width: 768px) {
-    header .container h2 {
-        width: 100%;
-    }
-}
-
-header .container .main-ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (max-width: 768px) {
-    header .container .main-ul {
-        margin: auto;
-    }
-
-}
-
-header .main-ul > li:hover .mega-menu {
-  opacity: 1;
-  z-index: 100;
-  top: calc(100% + 1px);
-}
-
-header .container .main-ul > li > a {
-    height: 76px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 0px 20px;
-    overflow: hidden;
-    transition: all 0.3s ease 0s;
-} 
-
-@media (max-width: 768px) {
-    header .container .main-ul > li > a {
-    height: 50px;
-    padding: 0 10px;
-    font-size: 16px;
-    }
-}
-
-header .container .main-ul > li > a::before {
-    content: '';
-    background-color: white;
-    width: 100%;
-    height: 4px;
-    position: absolute;
-    top: 0;
-    left: -100%;
-    transition: 0.3s;
-}
-
-header .container .main-ul > li > a:hover {
-    color: var(--hslcolor);
-}
-
-header .container .main-ul > li > a:hover::before {
-    left: 0%;
-}
-
-
-
-
-
-
-
-
-header .container .main-ul .mega-menu {
-  position: absolute;
-  width: 400px;
-  right: 0;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  top: calc(100% + 50px);
-  opacity: 0;
-  z-index: -1;
-  transition: top var(--main-duration), opacity var(--main-duration);
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  padding: 10px 20px;
-  gap: 45px;
-
-}
-
-
-header .container .main-ul .mega-menu .links li:last-child {
-  border-bottom: none;
-}
-
-@media (max-width: 767px) {
-  header .container .main-ul .mega-menu {
-    flex-direction: column;
-    gap: 0;
-    padding: 10px 40px;
-  }
-
-  header .container .main-ul .mega-menu .links:first-of-type li:last-child {
-    border-bottom: 1px solid #e9e6e6;
-}
-}
-
-
-header .container .main-ul .mega-menu li:hover {
-  background-color: #fafafa;
-}
-
-header .container .main-ul .lhow:hover .mega-menu {
-  opacity: 1;
-  z-index: 100;
-  top: calc(100% + 1px);
-}
-
-
-header .container .main-ul .mega-menu ul {
-  flex: 1;
-}
-
-header .container .main-ul .mega-menu li a {
-  color: var(--maincolor);
-  font-weight: bold;
-  padding: 20px 5px;
-  transition: var(--main-duration);
-}
-
-
-header .container .main-ul .mega-menu li a img {
-  width: 22px;
-  margin-bottom: -5px;
-  margin-right: 5px;
-}
-
-header .container .main-ul .mega-menu li {
-  border-bottom: 1px solid #e9e6e6;
-  display: flex;
-  align-items: center;
-}
-
-header .container .main-ul .mega-menu li i {
-  margin-right: 11px;
-} */
-
-
-
-/* end header  */
 
 .landing {
     position: relative;
@@ -280,7 +97,7 @@ header .container .main-ul .mega-menu li i {
   z-index: -1;
 }
 
-.landing::after {
+/* .landing::after {
   content: "";
   position: absolute;
   background-color: hwb(207deg 13% 5% / 15%);
@@ -291,7 +108,7 @@ header .container .main-ul .mega-menu li i {
   transform-origin: left top;
   left: 0px;
   z-index: -1;
-}
+} */
 
 /* 
  @media  (max-width: 500px) {
@@ -495,6 +312,7 @@ z-index: -1;
   border-radius: 6px;
   font-weight: bold;
   transition: 0.5s;
+  box-shadow: 0 0 40px var(--maincolor);
 }
 
 @media (max-width: 992px) {
@@ -2718,6 +2536,7 @@ header {
   left: 0;
   right: 0;
   z-index: 5;
+  box-shadow: 0 0 0;
 }
 
 .header {
@@ -3069,6 +2888,7 @@ header .container .links .native li a:hover {
 
   .ative {
     background-color: var(--maincolor);
+    box-shadow: 0 0 15px var(--hslcolor);
   }
 
   .texta {
@@ -3140,7 +2960,22 @@ body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px;
 
 
 
+.layer {
 
+}
+
+.layer::before {
+  content: "";
+  position: absolute;
+  background-image: url(../image/layeeer555.jpg);
+    background-size: cover;
+    width: 100%;
+    top: -92px;
+    height: 100%;
+    transform-origin: left top;
+    left: 0px;
+    z-index: -1;
+}
 
 
 
